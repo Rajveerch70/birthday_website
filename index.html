@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Name Input Screen -->
+  <div class="name-screen" id="nameScreen">
+    <h2>Welcome! 💖</h2>
+    <p>Enter your name to begin:</p>
+    <input type="text" id="friendName" placeholder="Your name">
+    <button onclick="startCelebration()">Let's Go 🎉</button>
+  </div>
+
+  <!-- Main Birthday Content -->
+  <div class="container hidden" id="mainContent">
+    <h1>🎂 Happy Birthday, <span id="displayName"></span>! 🎂</h1>
+    
+    <!-- Special Message -->
+    <p class="message">
+      Today is a celebration of you! 💕  
+      May your day be filled with love, laughter, and unforgettable memories.  
+      You bring so much joy to everyone around you.  
+      Here's to a year as amazing as you are! 🌸✨
+    </p>
+
+    <!-- Photo Gallery -->
+    <h2>📸 Our Memories Together</h2>
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="Memory 1">
+      <img src="images/photo2.jpg" alt="Memory 2">
+      <img src="images/photo3.jpg" alt="Memory 3">
+      <img src="images/photo4.jpg" alt="Memory 4">
+    </div>
+
+    <!-- Surprise Section -->
+    <button class="surprise-btn" onclick="showSurprise()">Click for Surprise 🎁</button>
+    <div id="surprise" class="hidden">
+      <h2>🎈 You're the Best! 🎈</h2>
+      <p>Thank you for being an amazing friend. Enjoy your special day! 🌟</p>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="music.mp3" loop></audio>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #add8e6);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Name Input Screen */
+.name-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+}
+
+.name-screen h2 {
+  font-size: 2rem;
+}
+
+.name-screen input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-size: 1rem;
+  outline: none;
+  width: 200px;
+}
+
+.name-screen button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff6f91;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.name-screen button:hover {
+  background: #ff4e73;
+}
+
+/* Main Container */
+.container {
+  padding: 40px 20px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.message {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+/* Photo Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Surprise Button */
+.surprise-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  border: none;
+  background: #add8e6;
+  color: #333;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.surprise-btn:hover {
+  background: #87ceeb;
+}
+
+#surprise {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.3);
+  padding: 20px;
+  border-radius: 15px;
+  animation: fadeIn 1s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Confetti Canvas */
+#confettiCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
